@@ -1,3 +1,20 @@
+;;; config.el --- Personal configuration
+;;
+;; Copyright (c) 2019 Kirill Stepanov
+;;
+;; Author: Kirill Stepanov
+;; URL: https://github.com/soeik
+;; Version: 1.0.0
+;; Keywords: convenience
+
+;; This file is not part of GNU Emacs.
+
+;;; Commentary:
+
+;; This file extends prelude's setup
+
+;;; Code:
+
 ;; Set indexing method to native
 (when (eq system-type 'windows-nt)
   (setq projectile-indexing-method 'native))
@@ -13,7 +30,6 @@
 ;; use eslint with web-mode
 (flycheck-add-mode 'javascript-eslint 'web-mode)
 (flycheck-add-mode 'javascript-eslint 'js2-mode)
-
 
 ;; Turn off js2 mode errors & warnings (we lean on eslint/standard)
 (setq js2-mode-show-parse-errors nil)
@@ -85,3 +101,6 @@
 
 (defadvice load-theme (before disable-themes-first activate)
   (disable-all-themes))
+
+(provide 'config)
+;;; config.el ends here
