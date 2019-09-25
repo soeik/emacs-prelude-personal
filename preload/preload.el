@@ -1,7 +1,7 @@
 (require 'subr-x)
 
 ;; Set default theme
-(setq prelude-theme 'material)
+(setq prelude-theme 'mysterioso)
 
 ;; Set font size
 (set-face-attribute 'default nil :height 140)
