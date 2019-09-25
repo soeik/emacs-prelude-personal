@@ -34,6 +34,7 @@
 (global-set-key (kbd "C-x t r") 'tide-rename-symbol)
 (global-set-key (kbd "C-x t R") 'tide-rename-file)
 (global-set-key (kbd "C-x t l") 'tide-rename-symbol-at-location)
+(global-set-key (kbd "C-x t .") 'tide-references)
 
 ;; Swap emacs windows
 (global-set-key (kbd "C-c C-s") 'window-swap-states)
