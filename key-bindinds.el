@@ -39,5 +39,9 @@
 ;; Swap emacs windows
 (global-set-key (kbd "C-c C-s") 'window-swap-states)
 
+;; Toggle autocompletion
+(global-set-key (kbd "<C-tab>") 'company-complete)
+
+
 (provide 'key-bindinds)
-;;; key-bindinds.el ends here
+;;; key-bindinds.el ends her

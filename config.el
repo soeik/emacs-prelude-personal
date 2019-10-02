@@ -93,6 +93,10 @@
 ;; Dired do what i mean
 (setq dired-dwim-target t)
 
+;; Rainbow identifiers and delimeters
+(add-hook 'web-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'web-mode-hook 'rainbow-identifiers-mode)
+
 ;; Disable themes on load
 (defun disable-all-themes ()
   "disable all active themes."
